@@ -7,7 +7,6 @@ void getA();
 void setA()
 {
     a = 25;
-
 };
 
 class Student
