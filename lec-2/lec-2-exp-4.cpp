@@ -43,6 +43,9 @@ int main()
     return 0;
 }
 
+// Class Implementation: The class Car implements behaviors like accelerate, brake, and displaySpeed. These methods define what happens when you call them.
+// Behavior: accelerate increases the speed by 10, and brake decreases the speed by 10. These are the behaviors of the car that are implemented inside the class.
+
 // 4. IMPLEMENTATION
 // Definition:
 // Implementation refers to the actual coding of the methods and behaviors specified in a class (or interface). In other words, it’s the part of the class that defines how the methods will function.
