@@ -34,5 +34,6 @@ int main()
 
     M.walk();
     M.swim();
+
     return 0;
 }
