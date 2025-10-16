@@ -13,11 +13,28 @@ private:
 public:
     void setName(string s)
     {
-        name = s;
+        if (s.size() == 0)
+        {
+            cout << "Invalid name";
+            return;
+        }
+        else
+        {
+            name = s;
+        }
     }
+
     void setAge(int s)
     {
-        age = s;
+        if (s < 0 || s > 100)
+        {
+            cout << "invalid age";
+            return;
+        }
+        else
+        {
+            age = s;
+        }
     }
     void setRollNumber(int s)
     {
@@ -40,9 +57,16 @@ public:
     {
         cout << roll_number << endl;
     }
-    void getGrade()
+    string getGrade(int pin)
     {
-        cout << grade << endl;
+        if (pin == 123)
+        {
+            cout << grade << endl;
+        }
+        else
+        {
+            return " ";
+        }
     }
 };
 
@@ -51,12 +75,12 @@ int main()
     Student S1;
 
     S1.setName("Ali");
-    S1.setAge(25);
+    S1.setAge(23);
     S1.setRollNumber(52);
     S1.setGrade("B");
 
     S1.getName();
     S1.getAge();
     S1.getRollNumber();
-    S1.getGrade();
+    S1.getGrade(123);
 }
