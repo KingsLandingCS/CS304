@@ -27,6 +27,23 @@ public:
     {
         grade = s;
     }
+
+    void getName()
+    {
+        cout << name << endl;
+    }
+    void getAge()
+    {
+        cout << age << endl;
+    }
+    void getRollNumber()
+    {
+        cout << roll_number << endl;
+    }
+    void getGrade()
+    {
+        cout << grade << endl;
+    }
 };
 
 int main()
@@ -37,4 +54,9 @@ int main()
     S1.setAge(25);
     S1.setRollNumber(52);
     S1.setGrade("B");
+
+    S1.getName();
+    S1.getAge();
+    S1.getRollNumber();
+    S1.getGrade();
 }
