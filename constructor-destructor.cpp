@@ -22,6 +22,11 @@ public:
         accountNumber = b;
         balance = c;
     }
+    Customer(string a, int b)
+    {
+        name = a;
+        accountNumber = b;
+    }
 
     void display()
     {
@@ -33,7 +38,9 @@ int main()
 {
     Customer A1;
     Customer A2("Rohit", 23, 1000);
+    Customer A3("Mohit", 26);
     A1.display();
     A2.display();
+    A3.display();
     return 0;
 }
