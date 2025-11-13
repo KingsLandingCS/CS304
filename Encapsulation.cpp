@@ -21,6 +21,11 @@ public:
     {
         cout << name << " " << accountNumber << " " << balance << " " << totalCustomer << endl;
     }
+
+    void displayTotal()
+    {
+        cout << totalCustomer << endl;
+    }
 };
 
 int Customer::totalCustomer = 0;
@@ -31,9 +36,6 @@ int main()
     Customer A1("Rohit", 1, 1000);
     Customer A2("Mohit", 2, 1800);
     Customer A3("Ali", 3, 2300);
-    A1.display();
-    A2.display();
-    A3.display();
-
+    A2.displayTotal();
     return 0;
 }
