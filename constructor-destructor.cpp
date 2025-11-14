@@ -8,6 +8,7 @@ class Customer
     int balance;
 
 public:
+    // Default Constructor
     Customer()
     {
         name = "Rohit";
@@ -16,16 +17,25 @@ public:
     }
 
     // Parameterized Constructor
-    Customer(string a, int b, int c)
+    Customer(string name, int accountNumber, int balance)
     {
-        name = a;
-        accountNumber = b;
-        balance = c;
+        this->name = name;
+        this->accountNumber = accountNumber;
+        this->balance = balance;
     }
+
+    // if the same constructor is being used multiple times with different parameters, it is called constructor overloading
     Customer(string a, int b)
     {
         name = a;
         accountNumber = b;
+        balance = 50;
+    }
+
+    // Inline Constructor
+
+    inline Customer(string a, int b, int c) : name(a), accountNumber(b), balance(c)
+    {
     }
 
     void display()
