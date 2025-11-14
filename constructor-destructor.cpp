@@ -17,12 +17,12 @@ public:
     }
 
     // Parameterized Constructor
-    Customer(string name, int accountNumber, int balance)
-    {
-        this->name = name;
-        this->accountNumber = accountNumber;
-        this->balance = balance;
-    }
+    // Customer(string name, int accountNumber, int balance)
+    // {
+    //     this->name = name;
+    //     this->accountNumber = accountNumber;
+    //     this->balance = balance;
+    // }
 
     // if the same constructor is being used multiple times with different parameters, it is called constructor overloading
     Customer(string a, int b)
