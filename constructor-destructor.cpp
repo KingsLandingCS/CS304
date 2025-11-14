@@ -6,6 +6,7 @@ class Customer
     string name;
     int accountNumber;
     int balance;
+    int *roi;
 
 public:
     // Default Constructor
@@ -14,6 +15,7 @@ public:
         name = "Rohit";
         accountNumber = 5;
         balance = 100;
+        roi = new int[100];
     }
 
     // Parameterized Constructor
