@@ -44,6 +44,8 @@ public:
     {
         cout << name << " " << accountNumber << " " << balance << endl;
     }
+
+    
 };
 
 int main()
@@ -54,5 +56,7 @@ int main()
     A1.display();
     A2.display();
     A3.display();
+    Customer A4(A3);
+    A4.display();
     return 0;
 }
