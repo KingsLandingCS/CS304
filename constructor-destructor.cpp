@@ -45,7 +45,13 @@ public:
         cout << name << " " << accountNumber << " " << balance << endl;
     }
 
-    
+    //Copy Constructor
+    Customer(Customer &B)
+    {
+        name = B.name;
+        accountNumber = B.accountNumber;
+        balance = B.balance;
+    }
 };
 
 int main()
