@@ -64,6 +64,7 @@ int main()
     A3.display();
     Customer A4(A3);
     A4.display();
+    Customer A5;
     A5 = A3;
     A5.display();
     return 0;
