@@ -5,16 +5,17 @@ using namespace std;
 class Customer
 {
     string name;
-    int accountNumber, balance;
+    int accountNumber, balance, age;
     static int totalCustomer;
     static int totalBalance;
 
 public:
-    Customer(string name, int accountNumber, int balance)
+    Customer(string name, int accountNumber, int balance, int age)
     {
         this->name = name;
         this->accountNumber = accountNumber;
         this->balance = balance;
+        this->age = age;
         totalCustomer++;
         totalBalance += balance;
     }
@@ -31,6 +32,10 @@ public:
         {
             balance += amount;
             totalBalance += amount;
+        }
+        else
+        {
+            cout << "Invalid amount" << endl;
         }
     }
 
@@ -60,9 +65,9 @@ int Customer::totalBalance = 0;
 int main()
 {
 
-    Customer A1("Rohit", 1, 1000);
-    Customer A2("Mohit", 2, 1800);
-    Customer A3("Ali", 3, 2000);
+    Customer A1("Rohit", 1, 1000, 8);
+    Customer A2("Mohit", 2, 1800, 9);
+    Customer A3("Ali", 3, 2000, 12);
     A1.deposit(800);
     A2.withdraw(500);
     Customer::accessStatic();
