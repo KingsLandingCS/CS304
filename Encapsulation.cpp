@@ -45,6 +45,10 @@ public:
         {
             this->age = age;
         }
+        else
+        {
+            cout << "invalid age" << endl;
+        }
     }
 
     void withdraw(int amount)
@@ -58,7 +62,7 @@ public:
 
     void display()
     {
-        cout << name << " " << accountNumber << " " << balance << " " << totalCustomer << endl;
+        cout << name << " " << accountNumber << " " << balance << " " << totalCustomer << age << endl;
     }
 
     void displayTotal()
@@ -76,6 +80,7 @@ int main()
     Customer A1("Rohit", 1, 1000, 8);
     Customer A2("Mohit", 2, 1800, 9);
     Customer A3("Ali", 3, 2000, 12);
+    A1.updateAge(24);
     A1.deposit(800);
     A2.withdraw(500);
     Customer::accessStatic();
