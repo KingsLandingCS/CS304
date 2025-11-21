@@ -39,6 +39,14 @@ public:
         }
     }
 
+    void updateAge(int age)
+    {
+        if (age > 0 && age < 100)
+        {
+            this->age = age;
+        }
+    }
+
     void withdraw(int amount)
     {
         if (amount <= balance && amount > 0)
