@@ -30,6 +30,6 @@ public:
 
 int main()
 {
-    Student A1("Rohit", 26, 32, 99);
+    Student A1;
     A1.work();
 }
