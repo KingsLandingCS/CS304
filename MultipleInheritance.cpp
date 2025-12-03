@@ -3,6 +3,11 @@ using namespace std;
 
 class Engineer
 {
+    void money()
+    {
+        cout << "Hello Money" << endl;
+    }
+
 public:
     string specilization;
 
