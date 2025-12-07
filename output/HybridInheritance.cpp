@@ -10,24 +10,6 @@ public:
     }
 };
 
-class Boy : public Student
-{
-public:
-    void BoyPrint()
-    {
-        cout << "I am Boy" << endl;
-    }
-};
-
-class Girl : public Student
-{
-public:
-    void GirlPrint()
-    {
-        cout << "I am Girl" << endl;
-    }
-};
-
 class Male
 {
 public:
@@ -46,8 +28,30 @@ public:
     }
 };
 
+class Boy : public Student, Male
+{
+public:
+    void BoyPrint()
+    {
+        cout << "I am Boy" << endl;
+    }
+};
+
+class Girl : public Student, Female
+{
+public:
+    void GirlPrint()
+    {
+        cout << "I am Girl" << endl;
+    }
+};
+
 int main()
 {
+    Girl G1;
+    G1.print();
+    Boy B1;
+    B1.BoyPrint();
 
     return 0;
 }
