@@ -37,7 +37,7 @@ public:
     }
 };
 
-class Girl : public Student, Female
+class Girl : public Student, public Female
 {
 public:
     void GirlPrint()
