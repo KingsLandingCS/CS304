@@ -50,7 +50,7 @@ public:
 
 int main()
 {
-    CodeTeacher A1;
+    CodeTeacher A1("Zubi", "AutoMata", 10000, 50000);
     A1.display();
 
     return 0;
