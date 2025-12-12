@@ -34,7 +34,7 @@ public:
     void BoyPrint()
     {
         cout << "I am Boy" << endl;
-    }
+     }
 };
 
 class Girl : public Student, public Female
