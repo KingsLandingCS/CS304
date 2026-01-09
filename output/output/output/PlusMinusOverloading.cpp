@@ -22,6 +22,12 @@ public:
         p.value = ++value;
         return p;
     }
+    // Person operator--()
+    // {
+    //     Person p;
+    //     p.value = --value;
+    //     return p;
+    // }
 
     void display()
     {
